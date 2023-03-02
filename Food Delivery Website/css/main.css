@@ -1,0 +1,490 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+body {
+  height: 150vh;
+  position: relative;
+  background-color: #ebecf2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  height: 60vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 45vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+header .header-img {
+  background-image: url(../img/foodmitho.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  position: relative;
+}
+header .header-one {
+  font-size: 60px;
+  color: rgb(58, 54, 54);
+}
+header .header-two {
+  font-size: 40px;
+  color: rgb(102, 41, 61);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+nav a {
+  padding: 20px;
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: blue;
+  background-color: royalblue;
+}
+
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/salad-g64dfbe0f6_1920.jpg);
+  height: 80%;
+}
+.main-page h1 {
+  padding: 20px;
+  font-size: 60px;
+  position: relative;
+  bottom: 40px;
+  color: royalblue;
+}
+.main-page span:hover {
+  color: blueviolet;
+}
+
+.about-us-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-header span {
+  color: gold;
+}
+
+.about-us {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 20px;
+}
+.about-us i {
+  border: none;
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+.about-us i:hover {
+  text-shadow: 0 0 55px blueviolet;
+}
+.about-us p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.offert-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin-top: 25px;
+  text-shadow: 0 0 10px rgb(110, 30, 5);
+  color: rgb(165, 17, 133);
+}
+
+.offert {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+}
+.offert .fa-solid {
+  font-size: 60px;
+}
+.offert .first-plan {
+  text-align: center;
+}
+.offert .first-plan button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: blue;
+  background-color: blueviolet;
+}
+.offert i {
+  text-shadow: 0 0 10px purple;
+}
+.offert .second-plan {
+  text-align: center;
+}
+.offert .second-plan button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: blue;
+  background-color: blueviolet;
+}
+
+.catering {
+  background-image: url(../img/groceries-gc4ea228d9_1920.jpg);
+  z-index: -10;
+  background-attachment: fixed;
+}
+
+.third-plan {
+  text-align: center;
+}
+.third-plan button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: blue;
+  background-color: blueviolet;
+}
+
+.basic-catering {
+  z-index: 100;
+}
+.basic-catering .basic-catering-header {
+  margin-left: 15px;
+  font-family: mv boli;
+  color: rgb(135, 135, 30);
+}
+.basic-catering .basic-catering-header:after {
+  content: "";
+  width: 17%;
+  height: 2px;
+  background-color: rgb(135, 135, 30);
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+.basic-catering .menu-box {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.basic-catering .menu-box h2 {
+  color: orangered;
+}
+.basic-catering .menu-box h4 {
+  color: greenyellow;
+}
+.basic-catering .menu-box .rating {
+  color: gold;
+}
+.basic-catering .menu-box .menu-card-box {
+  width: 325px;
+  height: 400px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px black;
+}
+.basic-catering .menu-box .menu-card-box .fruits {
+  height: 170px;
+}
+.basic-catering .menu-box .menu-card-box .proteins-img {
+  height: 170px;
+}
+.basic-catering .menu-box .menu-card-box .menu-image img {
+  width: 80%;
+  margin-left: 35px;
+  transition: 0.3s;
+}
+.basic-catering .menu-box .menu-card-box .menu-image img:hover {
+  transform: scale(1.1);
+}
+
+.medium-catering .medium-catering-header {
+  margin-left: 15px;
+  font-family: mv boli;
+  color: rgb(9, 133, 178);
+}
+.medium-catering .medium-catering-header:after {
+  content: "";
+  width: 20%;
+  height: 2px;
+  background-color: rgb(9, 133, 178);
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+
+.premium-catering .premium-catering-header {
+  margin-left: 15px;
+  font-family: mv boli;
+  color: rgb(6, 2, 27);
+}
+.premium-catering .premium-catering-header:after {
+  content: "";
+  width: 22%;
+  height: 2px;
+  background-color: rgb(6, 2, 27);
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+
+.menu-box-premium {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.menu-box-premium .menu-card-box-premium {
+  width: 325px;
+  height: 400px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px black;
+}
+.menu-box-premium .menu-card-box-premium .fruits-premium {
+  width: 85%;
+  margin-left: 25px;
+  transition: 0.3s;
+}
+.menu-box-premium .menu-card-box-premium .fruits-premium:hover {
+  transform: scale(1.1);
+}
+.menu-box-premium .menu-card-info-premium {
+  position: relative;
+  bottom: 250px;
+}
+.menu-box-premium .rating-premium {
+  position: relative;
+  bottom: 240px;
+}
+
+.team {
+  background-color: white;
+  height: 100vh;
+}
+.team h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 50px;
+}
+.team span {
+  font-family: "Mynerve", cursive;
+  color: brown;
+}
+.team .team-box {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.team .team-box .chief-profile {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 150px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+  margin-top: 150px;
+}
+.team .team-box .chief-profile .team-box-info {
+  height: 200px;
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  transition: 0.4s;
+}
+.team .team-box .chief-profile .team-box-info .team-box-info-name {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  color: royalblue;
+  margin-bottom: 15px;
+}
+.team .team-box .chief-profile .team-box-info .name {
+  position: relative;
+  top: 90px;
+}
+.team .team-box .chief-profile .team-box-info .team-icon {
+  font-size: 30px;
+}
+.team .team-box .chief-profile .team-box-info .team-icon i {
+  position: relative;
+  top: 90px;
+}
+.team .team-box .chief-profile .team-box-info i:hover {
+  color: gold;
+}
+.team .team-box .chief-profile:hover {
+  border-radius: 20px;
+  height: 320px;
+}
+.team .team-box img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  transition: 0.4s;
+}
+.team .team-box img:hover {
+  border-radius: 20px;
+  margin-bottom: 300px;
+}
+.team .team-box .dietetic-profile {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+  margin-top: 150px;
+}
+.team .team-box .dietetic-profile .team-box-info {
+  height: 200px;
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  transition: 0.4s;
+}
+.team .team-box .dietetic-profile .team-box-info .team-box-info-name-dietetic {
+  font-size: 45px;
+  font-family: "Pacifico", cursive;
+  color: royalblue;
+  margin-top: 65px;
+}
+.team .team-box .dietetic-profile .team-box-info .team-box-info-name-dietetic .name {
+  position: relative;
+  top: 130px;
+}
+.team .team-box .dietetic-profile .team-box-info .team-icon {
+  font-size: 30px;
+}
+.team .team-box .dietetic-profile:hover {
+  border-radius: 20px;
+  height: 320px;
+}
+.team .personal-trainer-profile {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 150px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: 0.4s;
+  margin-top: 150px;
+}
+.team .personal-trainer-profile img {
+  width: 315px;
+  height: 310px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  transition: 0.4s;
+}
+.team .personal-trainer-profile .team-box-info {
+  height: 200px;
+  position: absolute;
+  text-align: center;
+  top: 25%;
+  transition: 0.4s;
+}
+.team .personal-trainer-profile .team-box-info .team-box-info-name-trainer {
+  font-size: 45px;
+  font-family: "Indie Flower", cursive;
+  color: royalblue;
+  margin-top: 80px;
+}
+
+.order-now {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order-now span {
+  font-family: "Yellowtail", cursive;
+  font-size: 40px;
+  color: rgb(135, 135, 30);
+}
+
+.order-input-area {
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.order-input-area div {
+  font-size: 25px;
+}
+.order-input-area input {
+  width: 300px;
+  height: 40px;
+  transition: 0.2s;
+}
+.order-input-area input:hover {
+  background-color: rgb(230, 230, 230);
+}
+.order-input-area button {
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 40px;
+  font-family: "Sriracha", cursive;
+  border-radius: 20px;
+  background-color: gold;
+  color: rgb(165, 17, 133);
+}
+.order-input-area button:hover {
+  background-color: rgb(128, 110, 10);
+  color: rgb(215, 24, 209);
+}/*# sourceMappingURL=main.css.map */

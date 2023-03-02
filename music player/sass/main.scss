@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-image: url(../img/pexels-daniel-reche-3721941.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+}
+
+nav ul {
+    transform: skew(-25deg);
+}
+
+ul {
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    padding: 20px;
+    
+     
+    a {
+        background: #FFFFFF;
+        border-right: 1px solid #EEEEEE;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #000000;
+        transition: all 0.3s linear;
+
+        a:first-child {
+            border-radius: 7px 0 0 7px;
+        }
+
+        a:last-child {
+            border-right: none;
+            border-radius: 0 7px 7px 0;
+        }
+
+    }
+
+    a:hover {
+        background: #EEEEEE;
+        color: #FF6B01;
+        transition: color 0.3s;
+    }
+}
+
+
+.music{
+    position: absolute;
+    color: #aa7d7d
+}
+
+.music-left {
+    top: 30%;
+    left: 15%;
+    h1 {
+        font-size: 40px;
+        
+    }
+
+    h1:hover {
+        color: royalblue;
+        transition: color 0.3s;
+    }
+
+}
+
+.music-right {
+    top: 25%;
+    left:70%;
+    display: flex;
+    flex-direction: row;
+
+   p{
+    margin-top: 55px;
+    margin-right: 5px;
+    font-size: 20px;
+   }
+
+   button{
+    background: none;
+    border: none;
+    
+   }
+
+    img{
+        width: 30%;
+        color: #aa7d7d;
+    }
+
+}

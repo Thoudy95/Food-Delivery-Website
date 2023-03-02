@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+nav a {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+nav .app-icon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 4px;
+  left: 4px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav .app-icon:hover {
+  box-shadow: 0 0 10px 0 rgb(116, 116, 116);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  position: relative;
+  top: 60px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 30%;
+  height: 35px;
+  top: 100px;
+  left: 550px;
+  border: 1px solid gainsboro;
+  border-radius: 20px;
+}
+.input-container .input-container:hover {
+  color: grey;
+  background-color: grey;
+}
+.input-container .mic-icon {
+  height: 20px;
+  width: 20px;
+}
+.input-container .search-icon {
+  height: 20px;
+  width: 20px;
+}
+.input-container .icon {
+  cursor: pointer;
+}
+.input-container input {
+  width: 90%;
+  border: none;
+  outline: none;
+}
+.input-container .input-container:hover {
+  box-shadow: 0 0 30px 0 solid black;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  position: relative;
+  top: 150px;
+  background-color: #f8f9fa;
+  border: none;
+  margin: 0 20px;
+  padding: 15px;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 gainsboro;
+}
+
+@font-face {
+  font-family: "Product Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/productsa...) format("woff2");
+}
+footer {
+  position: fixed;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+footer a {
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer .footer-right {
+  position: fixed;
+  right: 0;
+  bottom: 10px;
+}/*# sourceMappingURL=main.css.map */
